@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dbbd9bbc7eb5dea44c984ee4e33cf61f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dbbd9bbc7eb5dea44c984ee4e33cf61f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dbbd9bbc7eb5dea44c984ee4e33cf61f = L.map(
+                "map_dbbd9bbc7eb5dea44c984ee4e33cf61f",
+                {
+                    center: [15.87, 100.9925],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4ea12db564756077950d953e6acb374 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f4ea12db564756077950d953e6acb374.addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var marker_00b98fac30a5f3f442c1105d0b6145d1 = L.marker(
+                [16.4388, 103.5061],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_afd74ad1306c93150a85334cae3ae352 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_00b98fac30a5f3f442c1105d0b6145d1.setIcon(icon_afd74ad1306c93150a85334cae3ae352);
+        
+    
+        var popup_fecebe2f6908bb16553cf5083759dbff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b59a6953b0a97b7023dceed5d75b1a17 = $(`<div id="html_b59a6953b0a97b7023dceed5d75b1a17" style="width: 100.0%; height: 100.0%;">กาฬสินธุ์: y=24.36, Color=Beige</div>`)[0];
+                popup_fecebe2f6908bb16553cf5083759dbff.setContent(html_b59a6953b0a97b7023dceed5d75b1a17);
+            
+        
+
+        marker_00b98fac30a5f3f442c1105d0b6145d1.bindPopup(popup_fecebe2f6908bb16553cf5083759dbff)
+        ;
+
+        
+    
+    
+            var marker_f20181b80189b46dab607738bf4711a8 = L.marker(
+                [16.4419, 102.835],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_801ab0a26b81d37321a6fa2a4514bd24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_f20181b80189b46dab607738bf4711a8.setIcon(icon_801ab0a26b81d37321a6fa2a4514bd24);
+        
+    
+        var popup_f627044e1844c7eba968e79f671a3ce5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d25257771b892684dc418cfc6ae3773 = $(`<div id="html_1d25257771b892684dc418cfc6ae3773" style="width: 100.0%; height: 100.0%;">ขอนแก่น: y=86.78, Color=Beige</div>`)[0];
+                popup_f627044e1844c7eba968e79f671a3ce5.setContent(html_1d25257771b892684dc418cfc6ae3773);
+            
+        
+
+        marker_f20181b80189b46dab607738bf4711a8.bindPopup(popup_f627044e1844c7eba968e79f671a3ce5)
+        ;
+
+        
+    
+    
+            var marker_2cd08fb29d7be0aa57c0ebb343884c95 = L.marker(
+                [15.8068, 102.031],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_356218841157f55a3bb0a4124f4d0504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_2cd08fb29d7be0aa57c0ebb343884c95.setIcon(icon_356218841157f55a3bb0a4124f4d0504);
+        
+    
+        var popup_532b484925f9eab1c0e4f74b0c6094c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd13ce8175b044bf63c75019493d565d = $(`<div id="html_fd13ce8175b044bf63c75019493d565d" style="width: 100.0%; height: 100.0%;">ชัยภูมิ: y=55.24, Color=Beige</div>`)[0];
+                popup_532b484925f9eab1c0e4f74b0c6094c6.setContent(html_fd13ce8175b044bf63c75019493d565d);
+            
+        
+
+        marker_2cd08fb29d7be0aa57c0ebb343884c95.bindPopup(popup_532b484925f9eab1c0e4f74b0c6094c6)
+        ;
+
+        
+    
+    
+            var marker_d372e39be2802767213890fc4d90c000 = L.marker(
+                [17.392, 104.7694],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_34f2f683294eb5f99315177715d4c8e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_d372e39be2802767213890fc4d90c000.setIcon(icon_34f2f683294eb5f99315177715d4c8e1);
+        
+    
+        var popup_2c9043e9655d8d472fbfeb8b0383d45f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_872a9a6df0dfafaa9cc1b01c229a75c2 = $(`<div id="html_872a9a6df0dfafaa9cc1b01c229a75c2" style="width: 100.0%; height: 100.0%;">นครพนม: y=33.40, Color=Beige</div>`)[0];
+                popup_2c9043e9655d8d472fbfeb8b0383d45f.setContent(html_872a9a6df0dfafaa9cc1b01c229a75c2);
+            
+        
+
+        marker_d372e39be2802767213890fc4d90c000.bindPopup(popup_2c9043e9655d8d472fbfeb8b0383d45f)
+        ;
+
+        
+    
+    
+            var marker_0ec8711b79081116e24fd9d794558b60 = L.marker(
+                [14.9799, 102.0977],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_7efa64161ecf0ed6a21bff3eec36cd09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ec8711b79081116e24fd9d794558b60.setIcon(icon_7efa64161ecf0ed6a21bff3eec36cd09);
+        
+    
+        var popup_7138301c6f30ff3be983ed51883569b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f6add70e11b34881e130e1d871b2ff = $(`<div id="html_30f6add70e11b34881e130e1d871b2ff" style="width: 100.0%; height: 100.0%;">นครราชสีมา: y=144.02, Color=Red</div>`)[0];
+                popup_7138301c6f30ff3be983ed51883569b2.setContent(html_30f6add70e11b34881e130e1d871b2ff);
+            
+        
+
+        marker_0ec8711b79081116e24fd9d794558b60.bindPopup(popup_7138301c6f30ff3be983ed51883569b2)
+        ;
+
+        
+    
+    
+            var marker_370a93a191f4f156ba5184c75de958aa = L.marker(
+                [18.3609, 103.6499],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_ece56942db1efa3169c3c78d1527709e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_370a93a191f4f156ba5184c75de958aa.setIcon(icon_ece56942db1efa3169c3c78d1527709e);
+        
+    
+        var popup_2c00da45f22d7ec0b30b581b2059d7d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb3260a8494966eb8547acf026ffe2f3 = $(`<div id="html_fb3260a8494966eb8547acf026ffe2f3" style="width: 100.0%; height: 100.0%;">บึงกาฬ: y=33.68, Color=LightRed</div>`)[0];
+                popup_2c00da45f22d7ec0b30b581b2059d7d3.setContent(html_fb3260a8494966eb8547acf026ffe2f3);
+            
+        
+
+        marker_370a93a191f4f156ba5184c75de958aa.bindPopup(popup_2c00da45f22d7ec0b30b581b2059d7d3)
+        ;
+
+        
+    
+    
+            var marker_e99b6480ec528302d837c44c8a72ba12 = L.marker(
+                [15.0052, 103.1117],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_95c360bb1bfd81ce7c0169d6dd178cb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e99b6480ec528302d837c44c8a72ba12.setIcon(icon_95c360bb1bfd81ce7c0169d6dd178cb2);
+        
+    
+        var popup_c363c0a399d94bbf8a076a5e448ab7e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75ebfac9cfa2d0a4d4e28e16a9022508 = $(`<div id="html_75ebfac9cfa2d0a4d4e28e16a9022508" style="width: 100.0%; height: 100.0%;">บุรีรัมย์: y=13.88, Color=Green</div>`)[0];
+                popup_c363c0a399d94bbf8a076a5e448ab7e9.setContent(html_75ebfac9cfa2d0a4d4e28e16a9022508);
+            
+        
+
+        marker_e99b6480ec528302d837c44c8a72ba12.bindPopup(popup_c363c0a399d94bbf8a076a5e448ab7e9)
+        ;
+
+        
+    
+    
+            var marker_67827bd4fefbe8eef1737a47db0fbf9d = L.marker(
+                [16.2001, 103.2822],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_6ea2b6cd1e51267f8db2ac1f9c9bdde5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_67827bd4fefbe8eef1737a47db0fbf9d.setIcon(icon_6ea2b6cd1e51267f8db2ac1f9c9bdde5);
+        
+    
+        var popup_196d5bc64c609cf1843687fa0e226460 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ae2dfe2f4cea28f9dbf6b856d70a2a7 = $(`<div id="html_3ae2dfe2f4cea28f9dbf6b856d70a2a7" style="width: 100.0%; height: 100.0%;">มหาสารคาม: y=4.88, Color=Green</div>`)[0];
+                popup_196d5bc64c609cf1843687fa0e226460.setContent(html_3ae2dfe2f4cea28f9dbf6b856d70a2a7);
+            
+        
+
+        marker_67827bd4fefbe8eef1737a47db0fbf9d.bindPopup(popup_196d5bc64c609cf1843687fa0e226460)
+        ;
+
+        
+    
+    
+            var marker_c304921ef486c0adf5b3a683a945dec0 = L.marker(
+                [16.5453, 104.7237],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_c7d7d933e123f056b8a83a3ef442fe88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_c304921ef486c0adf5b3a683a945dec0.setIcon(icon_c7d7d933e123f056b8a83a3ef442fe88);
+        
+    
+        var popup_de46033c5b4b57caa1d78ffaccd2010e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2a375a5bf5dfae7b6c4a2ea153ffad2 = $(`<div id="html_e2a375a5bf5dfae7b6c4a2ea153ffad2" style="width: 100.0%; height: 100.0%;">มุกดาหาร: y=23.86, Color=Beige</div>`)[0];
+                popup_de46033c5b4b57caa1d78ffaccd2010e.setContent(html_e2a375a5bf5dfae7b6c4a2ea153ffad2);
+            
+        
+
+        marker_c304921ef486c0adf5b3a683a945dec0.bindPopup(popup_de46033c5b4b57caa1d78ffaccd2010e)
+        ;
+
+        
+    
+    
+            var marker_149301351bd50539ddf10e129db460e5 = L.marker(
+                [15.7925, 104.1452],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_89845c9c6617c64d711105890aa28206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_149301351bd50539ddf10e129db460e5.setIcon(icon_89845c9c6617c64d711105890aa28206);
+        
+    
+        var popup_aa73c030f3cabb13143ff7528df1fa3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7a60378b70d582434017707a6f65452 = $(`<div id="html_c7a60378b70d582434017707a6f65452" style="width: 100.0%; height: 100.0%;">ยโสธร: y=12.57, Color=Beige</div>`)[0];
+                popup_aa73c030f3cabb13143ff7528df1fa3e.setContent(html_c7a60378b70d582434017707a6f65452);
+            
+        
+
+        marker_149301351bd50539ddf10e129db460e5.bindPopup(popup_aa73c030f3cabb13143ff7528df1fa3e)
+        ;
+
+        
+    
+    
+            var marker_010b6eef012e51910a472b15436bd232 = L.marker(
+                [15.857, 103.9915],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_c612f153f4bf9c914e15453a64daeae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_010b6eef012e51910a472b15436bd232.setIcon(icon_c612f153f4bf9c914e15453a64daeae1);
+        
+    
+        var popup_9b45512306aa35a80d32b7bec031cbdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaab73c2371f32ba1f80a676bb8c3f5f = $(`<div id="html_aaab73c2371f32ba1f80a676bb8c3f5f" style="width: 100.0%; height: 100.0%;">ร้อยเอ็ด: y=43.64, Color=LightRed</div>`)[0];
+                popup_9b45512306aa35a80d32b7bec031cbdd.setContent(html_aaab73c2371f32ba1f80a676bb8c3f5f);
+            
+        
+
+        marker_010b6eef012e51910a472b15436bd232.bindPopup(popup_9b45512306aa35a80d32b7bec031cbdd)
+        ;
+
+        
+    
+    
+            var marker_4b3401b5eda9db60a28469eba5cf0c4e = L.marker(
+                [17.4913, 101.7223],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_abb27e50c9f2ea9b37507b5eed03e332 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b3401b5eda9db60a28469eba5cf0c4e.setIcon(icon_abb27e50c9f2ea9b37507b5eed03e332);
+        
+    
+        var popup_8b800e0eb4083cc42d4024a842323b2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a113aa72f5ad542601f09ed63bde9bc5 = $(`<div id="html_a113aa72f5ad542601f09ed63bde9bc5" style="width: 100.0%; height: 100.0%;">เลย: y=45.08, Color=Red</div>`)[0];
+                popup_8b800e0eb4083cc42d4024a842323b2a.setContent(html_a113aa72f5ad542601f09ed63bde9bc5);
+            
+        
+
+        marker_4b3401b5eda9db60a28469eba5cf0c4e.bindPopup(popup_8b800e0eb4083cc42d4024a842323b2a)
+        ;
+
+        
+    
+    
+            var marker_d13977a031485b646196204232610e7d = L.marker(
+                [15.118, 104.3223],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_902c46e4b840dc6cb57f1b3bdbe8ec66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d13977a031485b646196204232610e7d.setIcon(icon_902c46e4b840dc6cb57f1b3bdbe8ec66);
+        
+    
+        var popup_99b6a1fa079aa52942c0305e05a45e7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b999bbef0d26d14de1fa0a143aec63d = $(`<div id="html_9b999bbef0d26d14de1fa0a143aec63d" style="width: 100.0%; height: 100.0%;">ศรีสะเกษ: y=47.80, Color=Red</div>`)[0];
+                popup_99b6a1fa079aa52942c0305e05a45e7f.setContent(html_9b999bbef0d26d14de1fa0a143aec63d);
+            
+        
+
+        marker_d13977a031485b646196204232610e7d.bindPopup(popup_99b6a1fa079aa52942c0305e05a45e7f)
+        ;
+
+        
+    
+    
+            var marker_c2c4a72e4cd02f83840497d84462bf29 = L.marker(
+                [17.1645, 104.142],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_b435b3f7b321a87e68f820cb46c2d93c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c2c4a72e4cd02f83840497d84462bf29.setIcon(icon_b435b3f7b321a87e68f820cb46c2d93c);
+        
+    
+        var popup_87172de0d11b8ee8c098d6db6a0eceaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82f93bf45c39c9e2d015c4274527f702 = $(`<div id="html_82f93bf45c39c9e2d015c4274527f702" style="width: 100.0%; height: 100.0%;">สกลนคร: y=5.80, Color=Green</div>`)[0];
+                popup_87172de0d11b8ee8c098d6db6a0eceaf.setContent(html_82f93bf45c39c9e2d015c4274527f702);
+            
+        
+
+        marker_c2c4a72e4cd02f83840497d84462bf29.bindPopup(popup_87172de0d11b8ee8c098d6db6a0eceaf)
+        ;
+
+        
+    
+    
+            var marker_12f9b767ed9d6e2c954273ac269165bd = L.marker(
+                [14.8829, 103.4936],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_714fe5a9e92fa70514d3d2662a2b3dde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_12f9b767ed9d6e2c954273ac269165bd.setIcon(icon_714fe5a9e92fa70514d3d2662a2b3dde);
+        
+    
+        var popup_bfcffd0a2bdc4fd94c80afe1f4e04a4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_beefcef062dd33c55530b720af0a7cc9 = $(`<div id="html_beefcef062dd33c55530b720af0a7cc9" style="width: 100.0%; height: 100.0%;">สุรินทร์: y=16.80, Color=LightGreen</div>`)[0];
+                popup_bfcffd0a2bdc4fd94c80afe1f4e04a4c.setContent(html_beefcef062dd33c55530b720af0a7cc9);
+            
+        
+
+        marker_12f9b767ed9d6e2c954273ac269165bd.bindPopup(popup_bfcffd0a2bdc4fd94c80afe1f4e04a4c)
+        ;
+
+        
+    
+    
+            var marker_b71cc1a6059eaed99928ebf2ebc4358a = L.marker(
+                [17.8783, 102.7422],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_db990a0454e77f16070aac8dd5ea500c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b71cc1a6059eaed99928ebf2ebc4358a.setIcon(icon_db990a0454e77f16070aac8dd5ea500c);
+        
+    
+        var popup_0aa2530bb7caca22dea0ac5f6be14dfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2c7da37a3eec04ef6af943eb22ac05b = $(`<div id="html_a2c7da37a3eec04ef6af943eb22ac05b" style="width: 100.0%; height: 100.0%;">หนองคาย: y=16.49, Color=Beige</div>`)[0];
+                popup_0aa2530bb7caca22dea0ac5f6be14dfe.setContent(html_a2c7da37a3eec04ef6af943eb22ac05b);
+            
+        
+
+        marker_b71cc1a6059eaed99928ebf2ebc4358a.bindPopup(popup_0aa2530bb7caca22dea0ac5f6be14dfe)
+        ;
+
+        
+    
+    
+            var marker_35a6ec8457d5e1a90d01123e9f83588b = L.marker(
+                [17.2046, 102.4407],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_31a5f2801f7a4dd4f22ecde20a197c68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_35a6ec8457d5e1a90d01123e9f83588b.setIcon(icon_31a5f2801f7a4dd4f22ecde20a197c68);
+        
+    
+        var popup_6b0bf0106c277fbb08eb11bee45e4efe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a0a5d39388f86a2bb84d1220db83544 = $(`<div id="html_4a0a5d39388f86a2bb84d1220db83544" style="width: 100.0%; height: 100.0%;">หนองบัวลำภู: y=22.64, Color=LightRed</div>`)[0];
+                popup_6b0bf0106c277fbb08eb11bee45e4efe.setContent(html_4a0a5d39388f86a2bb84d1220db83544);
+            
+        
+
+        marker_35a6ec8457d5e1a90d01123e9f83588b.bindPopup(popup_6b0bf0106c277fbb08eb11bee45e4efe)
+        ;
+
+        
+    
+    
+            var marker_1c3e1079c4bd75a9163a371460adecc3 = L.marker(
+                [15.8588, 104.6258],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_1d4af1b932f53e88b7e639da7c813501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c3e1079c4bd75a9163a371460adecc3.setIcon(icon_1d4af1b932f53e88b7e639da7c813501);
+        
+    
+        var popup_92ae1ba873c61e5b91afac36daf1e54f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed43e597e001eed3c066eaf125d7f2fa = $(`<div id="html_ed43e597e001eed3c066eaf125d7f2fa" style="width: 100.0%; height: 100.0%;">อำนาจเจริญ: y=19.22, Color=Red</div>`)[0];
+                popup_92ae1ba873c61e5b91afac36daf1e54f.setContent(html_ed43e597e001eed3c066eaf125d7f2fa);
+            
+        
+
+        marker_1c3e1079c4bd75a9163a371460adecc3.bindPopup(popup_92ae1ba873c61e5b91afac36daf1e54f)
+        ;
+
+        
+    
+    
+            var marker_f75eb7e8564cde58bd0fe8ac3537e3e3 = L.marker(
+                [17.4138, 102.7879],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_a1fd61facaeb86a6ccd019f6463acfc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f75eb7e8564cde58bd0fe8ac3537e3e3.setIcon(icon_a1fd61facaeb86a6ccd019f6463acfc7);
+        
+    
+        var popup_e280ef76fbdf3a4ae0eeb42713d63e7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68d179c01752f039637e082e5a5111c7 = $(`<div id="html_68d179c01752f039637e082e5a5111c7" style="width: 100.0%; height: 100.0%;">อุดรธานี: y=10.36, Color=Green</div>`)[0];
+                popup_e280ef76fbdf3a4ae0eeb42713d63e7c.setContent(html_68d179c01752f039637e082e5a5111c7);
+            
+        
+
+        marker_f75eb7e8564cde58bd0fe8ac3537e3e3.bindPopup(popup_e280ef76fbdf3a4ae0eeb42713d63e7c)
+        ;
+
+        
+    
+    
+            var marker_2588b9c3ab7bd09afbb8bfe4d42867d5 = L.marker(
+                [15.2287, 104.878],
+                {}
+            ).addTo(map_dbbd9bbc7eb5dea44c984ee4e33cf61f);
+        
+    
+            var icon_9e30c07e40d2d3ed1350a070e1fe177e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_2588b9c3ab7bd09afbb8bfe4d42867d5.setIcon(icon_9e30c07e40d2d3ed1350a070e1fe177e);
+        
+    
+        var popup_1c2b817d82b52dfae9e97a38115fe34c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac477f7b641bd92236739bdbb1622805 = $(`<div id="html_ac477f7b641bd92236739bdbb1622805" style="width: 100.0%; height: 100.0%;">อุบลราชธานี: y=27.10, Color=LightGreen</div>`)[0];
+                popup_1c2b817d82b52dfae9e97a38115fe34c.setContent(html_ac477f7b641bd92236739bdbb1622805);
+            
+        
+
+        marker_2588b9c3ab7bd09afbb8bfe4d42867d5.bindPopup(popup_1c2b817d82b52dfae9e97a38115fe34c)
+        ;
+
+        
+    
+</script>
+</html>
